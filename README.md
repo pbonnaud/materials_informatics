@@ -6,10 +6,14 @@ Note that all python script are optimized for being visualized with VI.
 
 I. Autoencoders with Convolutional Neural Networks:
 ---------------------------------------------------
-Examples are given in the file: 0_Various_Autoencoder_leading_to_CNN.py
 
-Useful links for data augmentation:
------------------------------------
+* 0_Various_Autoencoder_leading_to_CNN.py
+The above file provides various examples of autoencoders 
+
+* 1_Image_data_augmentation_example.py
+The above file provide an example for data augmentation using Keras with preprocessing layers
+
+See also the following links for data augmentation:
 https://medium.com/featurepreneur/data-augmentation-using-keras-preprocessing-layers-6cdc7d49328e
 https://machinelearningmastery.com/image-augmentation-deep-learning-keras/
 
