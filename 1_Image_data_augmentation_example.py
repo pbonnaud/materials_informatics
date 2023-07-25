@@ -84,7 +84,7 @@ for jj in range (repeats):
 
         img = cv2.imread(f1)
 
-        print (f1)
+        print(f1)
 
         x = tf.keras.utils.img_to_array(img)
 
@@ -129,7 +129,6 @@ print(x[0])
 ###
 
 #file_count = 5 #how many images you want....
-
 
 #for batch in datagen.flow (x, batch_size=1, save_to_dir = out_dir,save_prefix="a",save_format='jpg'):
 ###for batch in augmented_image.flow (x, batch_size=1, save_to_dir = out_dir,save_prefix="a",save_format='jpg'):
