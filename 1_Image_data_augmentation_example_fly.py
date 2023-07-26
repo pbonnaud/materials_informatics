@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 ### 
-### Last modification (DD/MM/YYY) : 20/07/2023
+### Last modification (DD/MM/YYY) : 26/07/2023
 ###
 ####################################################################################################
 ###                                                                                              ###
-### This python script is an example for Image augmentation saved into a new folder              ###  
+### This python script is an example for image augmentation saved into a new folder              ###
 ###                                                                                              ###
 ####################################################################################################
 
@@ -13,7 +13,7 @@
 #                                                                                                  #
 # Machine Learning for Materials Informatics                                                       #
 #                                                                                                  #
-# #### Markus J. Buehler, MIT                                                                      #
+# #### Markus J. Buehler, MIT                                                                      # 
 #                                                                                                  #
 ####################################################################################################
 
@@ -32,38 +32,39 @@ import tensorflow as tf
 
 from tensorflow.keras import layers
 
+from tensorflow import keras
+
 ### Set the path to the directory containing input data ############################################
 
-in_dir="./dataset/leaf_data/"
+in_dir="./dataset/fly/"
 
 ### Set the path to the directory containing output data ###########################################
 
-out_dir=r'./dataset/leaf_data_augmented/'
+out_dir=r'./dataset/fly_augmented/'
 
 ### Set how many times we go through the set of original images for augmenting them ################
 
-repeats= 12 
+repeats= 12
 
 ### Create the output directory if it does not exist ###############################################
 
 if not os.path.exists(out_dir):
 
-        os.mkdir(out_dir)
+    os.mkdir(out_dir)
 
 ### Set the model for data augmentation ############################################################
 
 data_augmentation = tf.keras.Sequential([
                     layers.RandomFlip("horizontal_and_vertical"),
-                    layers.RandomRotation(0.2, 
-                    fill_mode='reflect'),
+                    layers.RandomRotation(0.2, fill_mode='reflect'),
                     layers.RandomZoom(height_factor=(-0.6, -0.2), 
                     fill_mode='nearest'),
-#                   layers.RandomTranslation(height_factor=0.2,width_factor=0.2),#
+                    #layers.RandomTranslation(height_factor=0.2,width_factor=0.2),#
                     ])
 
 ### Set the source directory of all images #########################################################
 
-img_dir = in_dir
+img_dir = in_dir 
 
 ### Build the full path to all images ##############################################################
 
@@ -105,6 +106,8 @@ out_path, out_dirs, out_files = next(os.walk(out_dir))
 
 file_count = len(files) #to find number of files in folder
 
+#print (file_count)
+
 print('The number of counted input files is {}'.format(file_count))
 
 print(' ')
@@ -123,18 +126,17 @@ print(' ');
 
 ###
 
-print(x[0])
+print (x[0])
 
 ###
 
 #file_count = 5 #how many images you want....
 
 #for batch in datagen.flow (x, batch_size=1, save_to_dir = out_dir,save_prefix="a",save_format='jpg'):
-###for batch in augmented_image.flow (x, batch_size=1, save_to_dir = out_dir,save_prefix="a",save_format='jpg'):
 
-#    i+=1
+#    i += 1
 
-#    if i==file_count:
+#    if i == file_count:
 
 #      break
 
