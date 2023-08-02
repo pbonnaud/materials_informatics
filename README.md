@@ -20,3 +20,7 @@ See also the following links for data augmentation:
 https://medium.com/featurepreneur/data-augmentation-using-keras-preprocessing-layers-6cdc7d49328e
 https://machinelearningmastery.com/image-augmentation-deep-learning-keras/
 
+
+
+GNN with pytorch
+https://www.blopig.com/blog/2022/02/how-to-turn-a-smiles-string-into-a-molecular-graph-for-pytorch-geometric/
