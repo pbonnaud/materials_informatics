@@ -2,7 +2,11 @@
 
 This repository is meant to reports existing models in machine learning for materials informatics.
 
-Note that all python script are optimized for being visualized with VI. 
+Python scripts are mainly adapted from Jupyter Notebook files taken from the course of Prof. M. Buehler (MIT) on Materials Informatics. You may want to follow this course to have an excellent overview of techniques used in materials informatics (https://professional.mit.edu/course-catalog/machine-learning-materials-informatics).
+
+Here, I provide python script versions for those who are not comfortable with Jupyter Notebook and prefer working with basic scirpts. 
+
+Note that all python scripts are optimized for being visualized with VI on 100 columns preferentially. 
 
 I. Autoencoders with Convolutional Neural Networks:
 ---------------------------------------------------
